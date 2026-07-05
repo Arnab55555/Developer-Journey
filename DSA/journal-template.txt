@@ -1,0 +1,38 @@
+Problem:
+Move Zeroes
+
+Difficulty:
+Easy
+
+Date:
+5 July 2026
+
+Time Taken:
+35 minutes
+
+Could I solve it myself?
+Yes / Partially / No
+
+Approach:
+Used two pointers.
+One pointer tracks the next non-zero position.
+
+Time Complexity:
+O(n)
+
+Space Complexity:
+O(1)
+
+Mistakes:
+- Forgot to increment pointer.
+- Didn't handle all-zero array.
+- Initially used extra array.
+
+What did I learn?
+Two-pointer pattern can solve in-place rearrangement problems.
+
+Can I explain this to someone else?
+Yes / No
+
+Need revision?
+Yes
