@@ -1,0 +1,74 @@
+Problem:
+2 sum
+
+Given an array arr[] of integers and another integer target. 
+Determine if there exist two distinct indices such that the sum of their elements is equal to the target.
+
+Examples:
+
+Input: arr[] = [0, -1, 2, -3, 1], target = -2
+Output: true
+Explanation: arr[3] + arr[4] = -3 + 1 = -2
+
+
+Two Sum in Sorted Array
+
+You are given a 1-based indexed integer array arr[] that is sorted in non-decreasing order, along with an integer target. Your task is to find two elements in the array such that their sum is equal to target. If such a pair exists, return the indices of the two elements in increasing order. If no such pair exists, return [-1, -1].
+Note: If your answer is correct then the driver code will print "true" otherwise "false".
+
+Examples:
+
+Input: arr[] = [2, 7, 11, 15], target = 9
+Output: [1, 2]
+Explanation: Since arr[0] + arr[1] = 2 + 7 = 9 equals the target, return their 1-based indices : [1, 2]
+
+Difficulty:
+Easy
+
+Date:
+5 July 2026
+
+Time Taken:
+35 minutes
+
+Could I solve it myself?
+Yes - But the code was not optimized, it was taking more time than expected. I was able to do the brute force solution.
+No - was not able to write optimized code.
+
+Approach:
+Used two pointers.
+One pointer tracks the next non-zero position.
+
+Time Complexity:
+Brute force - O(n^2)
+Optimal - O(n) -> but only for finding the true or false condition not for finding the indices.
+Optimal - O(nlogn) -> for find the array indices.
+
+Space Complexity:
+O(1)
+
+Mistakes:
+- Made in a mistake in assigning the value of j in the second array.
+-Code was not optimized to more time than expected.
+-Tried using hashing but Hash can only be used for array that contains only positive values and not for the negative values.
+-Not reading the question properly.
+
+
+What did I learn?
+Two-pointer pattern can solve in-place rearrangement problems.
+Hash can only be used for array that contains only positive values and not for the negative values.
+For optimal solution - we can use the pointer at both the end, and based on that,
+if the sum is less than target than we can increase left pointer or if sum is greater than target than we decrease the right pointer. 
+
+Can I explain this to someone else?
+Yes
+
+Need revision?
+Yes
+
+Solution for both the question:
+1. We can take two pointer and then we can move both the pointer based on the sum, if it lesser than target than we can increase
+the left pointer but if the sum is greater than target then we decrease the right pointer.
+
+2. We can use unrodered_map hashing, where we store the indices of all the values and then we can target -(subtraction) current value; and if the
+remaining other value is present in the map or not and then we can return both the indices.
