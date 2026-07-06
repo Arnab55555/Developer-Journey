@@ -1,0 +1,52 @@
+Given an array arr[] containing only 0s, 1s, and 2s. Sort the array in ascending order.
+Note: You need to solve this problem without utilizing the built-in sort function.
+
+Examples:
+
+Input: arr[] = [0, 1, 2, 0, 1, 2]
+Output: [0, 0, 1, 1, 2, 2]
+Explanation: 0s, 1s and 2s are segregated into ascending order.
+
+Difficulty:
+Easy
+
+Date:
+6 July 2026
+
+Time Taken:
+50 minutes
+
+Could I solve it myself?
+No
+
+Approach:
+Used three pointers.
+One pointer tracks low, other mid and last high.
+
+Time Complexity:
+O(n)
+
+Space Complexity:
+O(1)
+
+Mistakes:
+-Was not able to think the logic.
+-Was getting confuse in the high mid low and also when to swap and where to swap.
+
+
+What did I learn?
+Three-pointer pattern can solve 3 number arrays problems.
+Dutch National Flag Algorithm
+
+Can I explain this to someone else?
+Yes
+
+Need revision?
+Yes
+
+Solution for both the question:
+1. One pointer points to low, mid and at the other end high points.
+2. mid does not change.
+3. low changes.
+3. high also changes.
+4. In this swapping is used to solve the problem.
