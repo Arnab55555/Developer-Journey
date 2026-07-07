@@ -1,0 +1,59 @@
+Problem:
+169. Majority Element
+
+Given an array nums of size n, return the majority element.
+The majority element is the element that appears more than ⌊n / 2⌋ times. 
+You may assume that the majority element always exists in the array.
+
+Example 1:
+
+Input: nums = [3,2,3]
+Output: 3
+
+Difficulty:
+Easy
+
+Date:
+7 July 2026
+
+Time Taken:
+50 minutes
+
+Could I solve it myself?
+Yes  - but not for array containing negative values.
+No - Was not able to find the optimal solution.
+
+Approach:
+Cancelling method. A number was selected than was checked. The number's counter was increased,
+if the same element was present as next element. The counter was decreased when the next element 
+was same. If the counter reached zero than the next element was used for counting and so on.
+
+Time Complexity:
+O(n)
+
+Space Complexity:
+O(1)
+
+Mistakes:
+- Not reading the question properly.
+- Was making in the initialization of the hash mapping.
+- wrong hash mapping length.
+- Was not running the loop of the hash map properly.
+- Was taking wrong result as the output.
+- Was not able to find the optimal solution.
+
+What did I learn?
+Two-pointer pattern can solve in-place rearrangement problems.
+Learned new algorithm - Moore's voting algorithm, which was a cancelling method.
+
+Can I explain this to someone else?
+Yes
+
+Need revision?
+Yes
+
+Solution
+
+Select an element, than increase counter if the next element is same, 
+and decrease the counter if the next element is different. When the counter becomes zero,
+select the very next element as new element.
