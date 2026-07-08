@@ -1,0 +1,53 @@
+Problem:
+Maximum Subarray
+Given an integer array nums, find the subarray with the largest sum, and return its sum.
+
+Example 1:
+
+Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
+Output: 6
+Explanation: The subarray [4,-1,2,1] has the largest sum 6.
+
+Difficulty:
+Medium
+
+Date:
+8 July 2026
+
+Time Taken:
+50 minutes
+
+Could I solve it myself?
+Partially.
+
+Approach:
+Increasing and decreasing method. Take two sum variable one current and other max.
+In current compare it with current pointing array element and the addition of the value.
+In the max store the most maximum values.
+
+Time Complexity:
+O(n)
+
+Space Complexity:
+O(1)
+
+Mistakes:
+- Not reading the question properly.
+- Doing unecessary extra validation which can be solved in few lines of code.
+- Was not able to find the optimal solution.
+
+What did I learn?
+Learned new algorithm - Kadane' algorithm.
+Learned how to find maximum subarray sum.
+
+Can I explain this to someone else?
+No
+
+Need revision?
+Yes
+
+Solution
+
+Select an element, than increase counter if the next element is same, 
+and decrease the counter if the next element is different. When the counter becomes zero,
+select the very next element as new element.
