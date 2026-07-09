@@ -1,0 +1,55 @@
+Problem:
+Best Time to Buy and Sell Stock
+
+You are given an array prices where prices[i] is the price of a given stock on the ith day.
+You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
+Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+
+Example 1:
+
+Input: prices = [7,1,5,3,6,4]
+Output: 5
+Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
+
+Difficulty:
+Easy
+
+Date:
+9 July 2026
+
+Time Taken:
+1 hour 30 minutes
+
+Could I solve it myself?
+No
+
+Approach:
+Increasing and decreasing method. Take two sum variable one current and other max.
+In current compare it with current pointing array element and the addition of the value.
+In the max store the most maximum values.
+
+Time Complexity:
+O(n)
+
+Space Complexity:
+O(1)
+
+Mistakes:
+- Not reading the question properly.
+- Not thinking logically with edge cases in mind.
+- Doing unecessary validation.
+- Was not able to find the optimal solution.
+
+What did I learn?
+Learned a type of greedy algorithm.
+
+Can I explain this to someone else?
+No
+
+Need revision?
+Yes
+
+Solution
+
+Select when the price is less and when the price is high as selling prices properly.
