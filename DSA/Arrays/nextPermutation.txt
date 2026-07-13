@@ -1,0 +1,74 @@
+Problem:
+A permutation of an array of integers is an arrangement of its members into a sequence or linear order.
+
+For example, for arr = [1,2,3], the following are all the permutations of arr: [1,2,3], [1,3,2], [2, 1, 3], [2, 3, 1], [3,1,2], [3,2,1].
+The next permutation of an array of integers is the next lexicographically greater permutation of its integer. 
+More formally, if all the permutations of the array are sorted in one container according to their lexicographical order, 
+then the next permutation of that array is the permutation that follows it in the sorted container. If such arrangement is not possible, 
+the array must be rearranged as the lowest possible order (i.e., sorted in ascending order).
+
+For example, the next permutation of arr = [1,2,3] is [1,3,2].
+Similarly, the next permutation of arr = [2,3,1] is [3,1,2].
+While the next permutation of arr = [3,2,1] is [1,2,3] because [3,2,1] does not have a lexicographical larger rearrangement.
+Given an array of integers nums, find the next permutation of nums.
+
+The replacement must be in place and use only constant extra memory.
+
+Example 1:
+
+Input: nums = [1,2,3]
+Output: [1,3,2]
+
+Difficulty:
+Medium
+
+Date:
+13 July 2026
+
+Time Taken:
+55 minutes
+
+Could I solve it myself?
+No
+
+Approach:
+Traverse the array from the end and find the first index `i` such that `arr[i] < arr[i + 1]`. 
+This is the breaking point (pivot), where the next permutation differs from the current one.
+Next, traverse the array again from the end and find the first element that is greater than `arr[i]`. 
+Since the suffix is in descending order, this element is the smallest element greater than the pivot. 
+Swap these two elements.
+Finally, reverse the subarray after index `i` to obtain the next lexicographically smallest permutation.
+If no breaking point is found, it means the array is already the largest possible permutation. 
+In that case, reverse the entire array to obtain the smallest permutation.
+
+
+Time Complexity:
+Brute force - O(n)
+
+Space Complexity:
+O(1)
+
+Mistakes:
+- Was not properly running the for loop. was not able to properly assign the range.
+- Not reading the question properly.
+
+
+What did I learn?
+Observation and handling of the array elements. Reverse trancing the indexing. 
+
+Can I explain this to someone else?
+Partially
+
+Need revision?
+Yes
+
+Solution for the question:
+
+Traverse the array from the end and find the first index `i` such that `arr[i] < arr[i + 1]`. 
+This is the breaking point (pivot), where the next permutation differs from the current one.
+Next, traverse the array again from the end and find the first element that is greater than `arr[i]`. 
+Since the suffix is in descending order, this element is the smallest element greater than the pivot. 
+Swap these two elements.
+Finally, reverse the subarray after index `i` to obtain the next lexicographically smallest permutation.
+If no breaking point is found, it means the array is already the largest possible permutation. 
+In that case, reverse the entire array to obtain the smallest permutation.
