@@ -1,0 +1,56 @@
+Problem:
+You are given an array arr of positive integers. 
+Your task is to find all the leaders in the array. 
+An element is considered a leader if it is greater than or equal to all elements to its right. 
+The rightmost element is always a leader.
+
+Examples:
+
+Input: arr = [16, 17, 4, 3, 5, 2]
+Output: [17, 5, 2]
+Explanation: Note that there is nothing greater on the right side of 17, 5 and, 2.
+
+Difficulty:
+Easy
+
+Date:
+16 July 2026
+
+Time Taken:
+35 minutes
+
+Could I solve it myself?
+No
+
+Approach:
+Used an maximum element by traversing from the backwards.
+
+Time Complexity:
+Brute force - O(n^2)
+Optimal - O(n)
+
+
+Space Complexity:
+O(n)
+
+Mistakes:
+- Initialized the loop incorrectly while attempting the brute-force approach.
+- Initially misunderstood when to add an element to the leaders array.
+- Forgot to reverse the result after traversing from right to left.
+
+
+
+What did I learn?
+Learned that traversing the array from right to left while maintaining the maximum element seen so far leads to an optimal solution. 
+Also understood when a flag is useful in brute-force approaches.
+
+Can I explain this to someone else?
+Yes
+
+Need revision?
+Yes
+
+Solution for both the question:
+Initialize a variable maxElement with INT_MIN. Traverse the array from right to left. 
+If the current element is greater than or equal to maxElement, it is a leader. Add it to the result and update maxElement. 
+Since the leaders are collected in reverse order, reverse the result before returning it.
