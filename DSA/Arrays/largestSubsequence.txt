@@ -1,0 +1,60 @@
+Problem:
+Longest Consecutive Subsequence
+
+Given an array arr[] of non-negative integers. 
+Find the length of the longest sub-sequence such that elements in the subsequence are consecutive integers, 
+the consecutive numbers can be in any order.
+
+Examples:
+
+Input: arr[] = [2, 6, 1, 9, 4, 5, 3]
+Output: 6
+Explanation: The consecutive numbers here are 1, 2, 3, 4, 5, 6. These 6 numbers form the longest consecutive subsquence.
+Input: arr[] = [1, 9, 3, 10, 4, 20, 2]
+Output: 4
+Explanation: 1, 2, 3, 4 is the longest consecutive subsequence.
+
+Difficulty:
+Easy
+
+Date:
+17 July 2026
+
+Time Taken:
+60 minutes
+
+Could I solve it myself?
+No
+
+Approach:
+Sort the array. Initiate a variable the stores the previous shortest value, a count the count the sequence,
+and a variable longest that stores the longest subsequence. The shortest value stores the previous shortest element,
+then it is used to compare, if the shortelement is equal to 1 less then the current value than the counter is increased, else
+the shortest element is replaced with current value. At the end the longest is the maximum between the count and the previous longest sequence.
+
+Time Complexity:
+Brute force - O(n^2)
+
+
+Space Complexity:
+O(1)
+
+Mistakes:
+- Initialized the counter value incorrectly in the else if statement.
+- Forgetting to taken an extra variable as shortest element.
+
+
+What did I learn?
+Learned how to find the logest subsequence by taking few variables and iterating the loop.
+
+Can I explain this to someone else?
+No
+
+Need revision?
+Yes
+
+Solution for both the question:
+Sort the array. Initiate a variable the stores the previous shortest value, a count the count the sequence,
+and a variable longest that stores the longest subsequence. The shortest value stores the previous shortest element,
+then it is used to compare, if the shortelement is equal to 1 less then the current value than the counter is increased, else
+the shortest element is replaced with current value. At the end the longest is the maximum between the count and the previous longest sequence.
