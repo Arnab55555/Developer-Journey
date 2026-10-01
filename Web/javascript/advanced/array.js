@@ -46,17 +46,32 @@ const newArr = myArr.join()
 
 const myArr2 = [0, 2, 4, 6, 8]
 
-console.log("A", myArr2)
-const ma1 = myArr2.slice(1, 3) 
-console.log(myArr2) // [0, 2, 4, 6, 8]
+// console.log("A", myArr2)
+// const ma1 = myArr2.slice(1, 3) 
+// console.log(myArr2) // [0, 2, 4, 6, 8]
 /* [2, 4] returns a shallow copy of a portion of an array 
 into a new array object selected from start to end (end not included) 
 where start and end represent the index of items in that array. 
 The original array will not be modified. */
 
-console.log("B", myArr2)
-const ma2 = myArr2.splice(1, 3)
-console.log(myArr2) // [0, 8]
+// console.log("B", myArr2)
+// const ma2 = myArr2.splice(1, 3)
+// console.log(myArr2) // [0, 8]
 /* [2, 4, 6] changes the contents of an array by removing or replacing 
 existing elements and/or adding new elements in place. */
 
+
+// console.log(...myArr); 
+/**spread operator, 
+it inserts all elements of the array into the console.log() function*/
+
+
+const arr3 = [1, 2, 3, [4, 5, 6], 7, [6, 7, [8, 9]]] // array with nested arrays
+
+const flatArr = arr3.flat(2) // flattens the array to a depth of 2
+
+// console.log(flatArr);
+
+console.log(Array.isArray(Arnab)) // checks if the variable is an array or not
+
+console.log(Array.from("Arnab")) // creates an array from a string
