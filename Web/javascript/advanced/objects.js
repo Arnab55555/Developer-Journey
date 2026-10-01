@@ -42,7 +42,8 @@ const JsUser4 = {
     email: "arnab@example.com"
 }
 
-console.log(JsUser4) // symbol is a unique and immutable data type that can be used as a key for object properties. It is often used to create private properties or to avoid naming collisions in objects.;
+console.log(JsUser4) // symbol is a unique and immutable data type that can be used as a key for object properties.
+//  It is often used to create private properties or to avoid naming collisions in objects.;
 
 JsUser4["email"] = "akash@example.com";
 
