@@ -102,10 +102,21 @@ const Users = [
 
 // console.log(Users[1].name) // Akshay
 
-console.log(User1)
-console.log(Object.keys(User1)) // returns an array of the keys of the object
-console.log(Object.values(User1)) // returns an array of the values of the object
-console.log(Object.entries(User1)) // returns an array of the key-value pairs of the object 
+// console.log(User1)
+// console.log(Object.keys(User1)) // returns an array of the keys of the object
+// console.log(Object.values(User1)) // returns an array of the values of the object
+// console.log(Object.entries(User1)) // returns an array of the key-value pairs of the object 
 
-console.log(User1.hasOwnProperty("name")) // returns true if the object has the specified property, otherwise false 
+// console.log(User1.hasOwnProperty("name")) // returns true if the object has the specified property, otherwise false 
 
+const course = {
+    name: "computer",
+    price: 999,
+    teacher: "Somiya"
+}
+
+const {teacher: teach} = course
+
+// console.log(teacher) // destructuring assignment to extract the value of the teacher property from the course object and assign it to a variable named teacher  
+
+console.log(teach) // destructuring assignment to extract the value of the teacher property from the course object and assign it to a variable named teach
