@@ -40,8 +40,43 @@ for (let index = 0; index < myArr.length; index++) {
 
 for (let index = 1; index <= 20; index++) {
     if (index == 5) {
-        console.log (`Detected 5`);
+        // console.log (`Detected 5`);
         continue
     }
-    console.log(`Value of i is ${index}`);
+    // console.log(`Value of i is ${index}`);
 }
+
+
+/** WHILE LOOP */
+
+// while (condition) {
+    
+// }
+
+let index = 0
+while (index <= 10){
+    // console.log(`Value of index is ${index}`);
+    index = index + 2
+}
+
+let arr1 = ["Cricket", "Football", "Basket Ball", "Voleyball"]
+let i = 0
+while (i < arr1.length){
+    // console.log(arr1[i]);
+    i++
+}
+
+
+/** DO WHILE LOOP */
+
+// do {
+    
+// } while (condition);
+
+
+let score = 11;
+
+do {
+    console.log(`Score is ${score}`);
+    score = score + 1
+} while (score <= 10);
